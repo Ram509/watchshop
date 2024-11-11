@@ -1,0 +1,95 @@
+/* Container for the entire product collection */
+.product-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Styling for each product card */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align products in a row */
+}
+
+.item-card {
+  width: 250px; /* Fixed width for each card */
+  border: 1px solid #ddd; /* Light border for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  margin: 15px; /* Space between cards */
+  padding: 16px; /* Internal padding for content */
+  text-align: center; /* Centered text */
+  background-color: #fff; /* White background */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.item-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.item-image {
+  width: 100%; /* Full width for images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Product name styling */
+.item-card h3 {
+  font-size: 1.2rem; /* Font size for product name */
+  margin: 12px 0; /* Margin above and below name */
+  color: #333; /* Dark color for text */
+}
+
+/* Price styling */
+.price {
+  font-size: 1rem; /* Standard font size for price */
+  color: #666; /* Gray color for text */
+}
+
+.new-price {
+  font-weight: bold; /* Bold new price */
+  color: #2e8b57; /* Green color for new price */
+  margin-right: 8px; /* Space between new and old price */
+}
+
+.old-price s {
+  color: #999; /* Light gray for old price */
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center align pagination controls */
+  margin-top: 20px; /* Space above pagination */
+}
+
+/* Pagination buttons styling */
+.pagination button {
+  padding: 8px 16px; /* Padding for buttons */
+  margin: 0 10px; /* Space between buttons */
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size for buttons */
+  transition: background-color 0.2s; /* Transition for background color */
+}
+
+.pagination button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.pagination button:disabled {
+  background-color: #ccc; /* Gray background for disabled buttons */
+  cursor: not-allowed; /* Not-allowed cursor for disabled */
+}
+
+/* Page indicator styling */
+.pagination span {
+  font-size: 1rem; /* Font size for page indicator */
+  color: #333; /* Dark color for text */
+}

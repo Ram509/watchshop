@@ -1,0 +1,96 @@
+/* Navbar.css */
+
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 80px; /* Adjust logo size */
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 16px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-icon a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.cart-icon a:hover {
+  color: #007bff;
+}
+
+/* Profile Icon Styling */
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the profile icon on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar.active .nav-links {
+    display: flex; /* Show links on click */
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .cart-icon {
+    margin-top: 10px;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
